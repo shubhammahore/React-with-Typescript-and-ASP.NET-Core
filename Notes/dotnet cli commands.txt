@@ -1,0 +1,44 @@
+
+DotNET 5 CLI Commands
+------------------------------
+dotnet [--version] [--info] [--list-runtimes] [--list-sdks]
+
+dotnet -h|--help
+dotnet --version
+
+dotnet new -l
+
+dotnet new globaljson --sdk-version 5.1.413
+
+--Create New Project
+dotnet new sln
+dotnet new webapi -n API
+dotnet new classlib -n Application
+dotnet new classlib -n Domain
+dotnet new classlib -n Persistence
+dotnet sln add API/API.csproj
+dotnet sln add Application
+dotnet sln add Domain
+dotnet sln add Persistence
+dotnet sln list
+
+--Add References
+
+cd API
+dotnet add reference ../Application
+
+cd ..
+cd Application
+dotnet add reference ../Persistence
+
+cd ..
+cd Persistence
+dotnet add reference ../Domain
+
+cd..
+
+cd API
+dotnet build
+dotnet run
+---------------------------
+
