@@ -2,7 +2,7 @@
 DotNET 5 CLI Commands
 ------------------------------
 dotnet [--version] [--info] [--list-runtimes] [--list-sdks]
-
+dotnet --list-sdks
 dotnet -h|--help
 dotnet --version
 
@@ -40,5 +40,7 @@ cd..
 cd API
 dotnet build
 dotnet run
+
+dotnet new gitignore
 ---------------------------
 
