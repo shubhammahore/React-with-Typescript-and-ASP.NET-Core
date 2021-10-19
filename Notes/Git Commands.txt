@@ -1,0 +1,13 @@
+Git
+----------------
+echo "# shubhammahore-React-Typescript-with-DotNet5-WebAPI" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/shubhammahore/shubhammahore-React-Typescript-with-DotNet5-WebAPI.git
+git push -u origin main
+
+git add -A && git commit -m "Your Message"
+git config --global alias.coa "!git add -A && git commit -m"
+git coa "A bunch of horrible changes"

@@ -1,0 +1,17 @@
+Node Version Manager-
+---------------
+Node -v
+NVM -ls
+nvm install latest 
+nvm use latest
+
+React Commands:
+-----------
+node --version
+npm --version
+npx create-react-app client-app --use-npm --template typescript
+
+React-Typescript-with-DotNet5-WebAPI/
+
+
+
